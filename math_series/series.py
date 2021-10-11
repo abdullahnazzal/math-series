@@ -17,3 +17,27 @@ def fibonacci(n:int)  :
             x = y
             y = nth
         return(nth-1)
+
+
+def lucas(n:int):
+    """
+    Lucas Funtion is the series of numbers: 2, 1, 3, 4, 7, 11, 18, 29, ...
+    And return nth Integer
+    
+    """
+    x=2
+    y=1
+    # count=0
+    if n <=0:
+        print("You Must Enter Positve Number")
+    elif n==1:
+        print(x)
+    else:
+        for i in range(n):
+            print(x)
+            nth=x+y
+            x = y
+            y = nth
+        return(nth-1)
+
+print(lucas(5))
