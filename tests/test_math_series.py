@@ -7,7 +7,7 @@ def test_version():
 
 def test_if_fibonacci_return_correctly():
     # Arrange
-    n=5
+    n=5 
     expected=7
     # Act
     actual=fibonacci(n)
