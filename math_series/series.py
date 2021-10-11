@@ -40,4 +40,13 @@ def lucas(n:int):
             y = nth
         return(nth-1)
 
-print(lucas(5))
+def sum_series(n,x=0,y=1):
+    """	
+    Container for fibonacci, lucas funtions
+    """
+    if x ==0 and y==1:
+        return fibonacci(n)
+    elif x==2 and y==1:
+        return lucas(n)
+
+print(sum_series(5))
